@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'DM Sans';
+    display: block;
+    justify-content: center;
+    text-align: center;
+    height: 334px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    color: #FFF;
+}
+
+.header-logo-container {
+    margin: 0 auto;
+    padding: 10% 0;
+}
+
+.header-h2 {
+    margin: 0 10%;
+}
+
+.header-p {
+    margin: 5% 10%;
+    color: #FFE9D4;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.header-button {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 4px;
+    border: none;
+    width: 229px;
+    height: 48px;
+    font-weight: bold;
+    background: #FAF8F7;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section1 {
+    font-family: 'DM Sans';
+    background: #FAF8F7;;
+    padding: 0 5%;
+    text-align: center;
+    height: 750px;
+}
+
+.section1-image-container {
+    padding: 15% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section1-p {
+    color: #757575;
+    padding-top: 7%;
+    padding-bottom: 20%;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.section1-prices-grid-right {
+    display: flex;
+}
+
+.section1-monedas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.section1-left-arrow-container {
+    display: flex;
+    align-content: center;
+}
+
+.section1-right-arrow-container {
+    display: flex;
+    align-content: center;
+}
+
+.section1-prices {
+    margin: 5% 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.section1-h3 {
+    color:  #FF9536;
+    margin-left: 24%;
+    text-align: left;
+}
+
+.section1-prices-grid {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+.section1-prices-grid-p1 {
+    margin-right: .5%;
+    height: 39px;
+    width: 101px;
+    background: #FFF;
+    color: #B5B0AC;
+    padding: 5% 5%;
+}
+
+.section1-prices-grid-p1-top-left {
+    margin-right: .5%;
+    height: 39px;
+    width: 101px;
+    background: #FFF;
+    color: #B5B0AC;
+    padding: 5% 5%;
+    border-top-left-radius: 10px;
+}
+
+.section1-prices-grid-p1-bottom-left {
+    margin-right: .5%;
+    height: 39px;
+    width: 101px;
+    background: #FFF;
+    color: #B5B0AC;
+    padding: 5% 6%;
+    border-bottom-left-radius: 10px;
+}
+
+.section1-prices-grid-p2 {
+    width: 95px;
+    height: 39px;
+    background: #FFF;
+    color: #757575;
+    padding: 5% 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1-prices-grid-p2-top-right {
+    width: 95px;
+    height: 39px;
+    background: #FFF;
+    color: #757575;
+    padding: 5% 6%;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1-prices-grid-p2-bottom-right {
+    width: 95px;
+    height: 39px;
+    background: #FFF;
+    color: #757575;
+    padding: 5% 6%;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 {
+    background: #201E1C;
+    padding: 15% 5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#section2-h1 {
+    text-align: center;
+}
+
+#section2-p {
+    margin: 8% 0;
+    text-align: center;
+}
+
+.section2-titles {
+    padding-top: 2%;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.section2-text {
+    padding-top: 2%;
+    color: #808080;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.section2-div {
+    background: #282623;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    height: 152px;
+    padding: 5%;
+}
+
+.section3 {
+    padding: 15% 0%;
+    background: #FAF8F7;
+    height: 525px;
+    overflow: hidden;
+}
+
+.section3 h1 {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#section3-p {
+    padding: 7% 0 10% 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #757575;
+    text-align: center;
+    font-family: 'DM Sans';
+}
+
+.section3-plans {
+    margin: 0 -30%;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.section3-plan1 {
+    border-radius: 8px;
+    width: 190px;
+    height: 247px;
+    background: #FFF;
+    opacity: .8;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    overflow-y: hidden;
+}
+
+.section3-plan2 {
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF;
+    width: 190px;
+    height: 247px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.section3-plan2-recomendado {
+    padding: 4% 0;
+    font-family: "Inter", sans-serif;
+    background: #F7931A;
+    height: 31px;
+    width: 101px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFF;
+    margin: -5% auto 5% auto;
+}
+
+.section3-plan2-price {
+    display: flex;
+    justify-content: center;
+}
+
+.section3-plan2-dollar {
+    margin-top: 5%;
+    color: #363636;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.section3-plan2-99 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 52px;
+}
+
+.section3-plan2-pay {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.section3-plan2-save {
+    margin: 5% 5% 7% 5%;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: #757575;
+}
+
+.section3-plan2-button {
+    margin: 0 auto;
+    display: flex;
+    border: 2px solid #F7931A;
+    background: #FAF8F7;
+    border-radius: 4px;
+    height: 48px;
+    width: 151px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.section3-plan3 {
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+    opacity: .8;
+    background: #FFF;
+    width: 190px;
+    height: 247px;
+    overflow: hidden;
+}
+
+footer {
+    font-family: 'DM Sans';
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F7931A;
+    height: 150px;
+}
+
+.footer-text {
+    color: #FFF;
+}
+
