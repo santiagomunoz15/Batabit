@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -16,6 +17,7 @@ header {
 .header-logo-container {
     margin: 0 auto;
     padding: 10% 0;
+    transition: 1s;
 }
 
 .header-h2 {
@@ -43,13 +45,16 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    transition: .5s;
 }
 
 .section1 {
     font-family: 'DM Sans';
     background: #FAF8F7;;
     padding: 0 5%;
-    text-align: center;
     height: 750px;
 }
 
@@ -59,47 +64,62 @@ header {
     justify-content: center;
 }
 
+.section1 h1 {
+    text-align: center;
+}
+
 .section1-p {
     color: #757575;
     padding-top: 7%;
-    padding-bottom: 20%;
+    padding-bottom: 12%;
     font-weight: 500;
     font-size: 14px;
+    text-align: center;
 }
 
-.section1-prices-grid-right {
+.prices-grid-right {
     display: flex;
 }
 
-.section1-monedas {
+.monedas {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 40px;
+    margin-bottom: 40px;   
 }
 
-.section1-left-arrow-container {
+.left-arrow-container {
     display: flex;
     align-content: center;
 }
 
-.section1-right-arrow-container {
+.right-arrow-container {
     display: flex;
     align-content: center;
 }
 
-.section1-prices {
+.prices {
     margin: 5% 0;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
-.section1-h3 {
+.prices-monedas-title {
     color:  #FF9536;
     margin-left: 24%;
     text-align: left;
+    margin-bottom: 3%;
 }
 
-.section1-prices-grid {
+.prices-comisiones-title {
+    display: none;
+    color: #0C8AFF;
+}
+
+.prices-comisiones {
+    display: none;
+}
+
+.prices-grid {
     margin-bottom: 1%;
     display: flex;
     justify-content: center;
@@ -107,7 +127,7 @@ header {
     font-family: 'Inter', sans-serif;
 }
 
-.section1-prices-grid-p1 {
+.prices-grid-p1 {
     margin-right: .5%;
     height: 39px;
     width: 101px;
@@ -116,7 +136,7 @@ header {
     padding: 5% 5%;
 }
 
-.section1-prices-grid-p1-top-left {
+.prices-grid-p1-top-left {
     margin-right: .5%;
     height: 39px;
     width: 101px;
@@ -126,7 +146,7 @@ header {
     border-top-left-radius: 10px;
 }
 
-.section1-prices-grid-p1-bottom-left {
+.prices-grid-p1-bottom-left {
     margin-right: .5%;
     height: 39px;
     width: 101px;
@@ -136,7 +156,7 @@ header {
     border-bottom-left-radius: 10px;
 }
 
-.section1-prices-grid-p2 {
+.prices-grid-p2 {
     width: 95px;
     height: 39px;
     background: #FFF;
@@ -146,7 +166,7 @@ header {
     justify-content: space-between;
 }
 
-.section1-prices-grid-p2-top-right {
+.prices-grid-p2-top-right {
     width: 95px;
     height: 39px;
     background: #FFF;
@@ -157,7 +177,7 @@ header {
     justify-content: space-between;
 }
 
-.section1-prices-grid-p2-bottom-right {
+.prices-grid-p2-bottom-right {
     width: 95px;
     height: 39px;
     background: #FFF;
@@ -211,9 +231,10 @@ header {
     overflow: hidden;
 }
 
-.section3 h1 {
+#section3-h1 {
     text-align: center;
     font-family: 'DM Sans', sans-serif;
+    padding: 1% 2%;
 }
 
 #section3-p {
@@ -223,9 +244,10 @@ header {
     color: #757575;
     text-align: center;
     font-family: 'DM Sans';
+    padding: 6% 3%;
 }
 
-.section3-plans {
+.plans {
     margin: 0 -30%;
     display: flex;
     justify-content: space-around;
@@ -233,17 +255,21 @@ header {
     font-family: 'DM Sans', sans-serif;
 }
 
-.section3-plan1 {
+.plan1-3-container {
+    display: none;
+}
+
+.plan1 {
     border-radius: 8px;
     width: 190px;
     height: 247px;
     background: #FFF;
     opacity: .8;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    overflow-y: hidden;
+    text-align: center;
 }
 
-.section3-plan2 {
+.plan2 {
     text-align: center;
     border-radius: 8px;
     background: #FFF;
@@ -252,7 +278,20 @@ header {
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.section3-plan2-recomendado {
+.plan1-title-container {
+    padding: 4% 0;
+    font-family: "Inter", sans-serif;
+    background: #0C8AFF;
+    height: 31px;
+    width: 101px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFF;
+    margin: -5% auto 5% auto;
+}
+
+.plan2-title-container {
     padding: 4% 0;
     font-family: "Inter", sans-serif;
     background: #F7931A;
@@ -265,30 +304,43 @@ header {
     margin: -5% auto 5% auto;
 }
 
-.section3-plan2-price {
+.plan3-title-container {
+    padding: 4% 0;
+    font-family: "Inter", sans-serif;
+    background: #289672;
+    height: 31px;
+    width: 101px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFF;
+    margin: -5% auto 5% auto;
+}
+
+.plans-pay {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.plans-price-container {
     display: flex;
     justify-content: center;
 }
 
-.section3-plan2-dollar {
+.plans-sign {
     margin-top: 5%;
     color: #363636;
     font-weight: 500;
     font-size: 12px;
 }
 
-.section3-plan2-99 {
+.plans-value {
     font-weight: 700;
     font-family: 'Inter', sans-serif;
     font-size: 52px;
 }
 
-.section3-plan2-pay {
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.section3-plan2-save {
+.plans-save {
     margin: 5% 5% 7% 5%;
     font-size: 12px;
     font-weight: 500;
@@ -296,7 +348,7 @@ header {
     color: #757575;
 }
 
-.section3-plan2-button {
+.plans-button {
     margin: 0 auto;
     display: flex;
     border: 2px solid #F7931A;
@@ -311,14 +363,14 @@ header {
 }
 
 
-.section3-plan3 {
+.plan3 {
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border-radius: 8px;
     opacity: .8;
     background: #FFF;
     width: 190px;
     height: 247px;
-    overflow: hidden;
+    text-align: center;
 }
 
 footer {
