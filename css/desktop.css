@@ -1,5 +1,5 @@
 
-@media (min-width: 750px) {
+@media (min-width: 670px) {
     
 .header-logo-container {
     padding: 5% 0;
@@ -121,7 +121,7 @@ header {
 }
 
 .plans {
-    margin: 0 5%;
+    margin: 0 3%;
     justify-content: space-around;
 }
 
